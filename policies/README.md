@@ -17,3 +17,19 @@ produce a `deny` set. An empty set means compliant.
 ## Tests
 
 Each policy has a passing and a failing case in `policies/tests/`.
+
+## Cloud variants
+
+A control ID is portable across clouds, but a Rego rule that names a resource type is not. Each control therefore has one file per cloud, with the same control ID.
+
+| Control | GCP file (Lab 3.3) | AWS file (Lab 3.4) | AWS Conftest namespace |
+|---|---|---|---|
+| SC-28 | `sc28_encryption.rego` | `sc28_encryption_aws.rego` | `compliance.sc28_aws` |
+| AC-3 | `ac3_no_public.rego` | `ac3_no_public_aws.rego` | `compliance.ac3_aws` |
+| CM-6 | `cm6_required_tags.rego` | `cm6_required_tags_aws.rego` | `compliance.cm6_aws` |
+
+The AWS variants match encryption and public-access-block resources to buckets by reference (`configuration`), because bucket names are unknown at plan time.
+
+## Policy gate
+
+`scripts/policy-gate.sh --workspace <dir>` runs the three AWS namespaces against a saved plan and exits 0 (pass) or 1 (fail). Only AWS namespaces are included, because a GCP namespace passes an AWS plan with zero coverage.
