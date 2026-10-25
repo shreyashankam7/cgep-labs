@@ -38,6 +38,8 @@ resource "aws_s3_bucket" "primary" {
 # terraform/primitives/compliant-s3/main.tf (continued)
 
 # SC-28: Protection of information at rest.
+# Risk acceptance: SSE-S3 (AES256) satisfies SC-28 for this lab bucket; a customer-managed KMS key adds cost with no added control value here.
+#tfsec:ignore:aws-s3-encryption-customer-key
 resource "aws_s3_bucket_server_side_encryption_configuration" "primary" {
   bucket = aws_s3_bucket.primary.id
   rule {
