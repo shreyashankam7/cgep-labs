@@ -1,0 +1,1467 @@
+{
+    "Findings": [
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/SSM.6/finding/f5fddd7e-28d2-4315-a090-c7ffbbb79426",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/SSM.6",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:50:37.497Z",
+            "LastObservedAt": "2026-10-27T22:50:37.497Z",
+            "CreatedAt": "2026-10-27T22:51:40.304Z",
+            "UpdatedAt": "2026-10-27T22:51:40.304Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40,
+                "Original": "MEDIUM"
+            },
+            "Title": "SSM Automation should have CloudWatch logging enabled",
+            "Description": "This control checks whether Amazon CloudWatch logging is enabled for AWS Systems Manager (SSM) Automation. The control fails if CloudWatch logging isn't enabled for SSM Automation.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For information about enabling CloudWatch logging for SSM Automation, see \"Logging Automation action output with CloudWatch Logs\" in the AWS Systems Manager User Guide.",
+                    "Url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-action-logging.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-ssm-automation-logging-enabled-78b676cb",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/SSM.6/finding/f5fddd7e-28d2-4315-a090-c7ffbbb79426"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "SecurityControlId": "SSM.6",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "MEDIUM",
+                    "Original": "MEDIUM"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:51:54.291Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/Account.1/finding/48b86035-9e0d-4919-b053-8491edcb582f",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/Account.1",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:50:37.434Z",
+            "LastObservedAt": "2026-10-27T22:50:37.434Z",
+            "CreatedAt": "2026-10-27T22:51:18.217Z",
+            "UpdatedAt": "2026-10-27T22:51:18.217Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40,
+                "Original": "MEDIUM"
+            },
+            "Title": "Security contact information should be provided for an AWS account.",
+            "Description": "This control checks if an Amazon Web Services (AWS) account has security contact information. The control fails if security contact information is not provided for the account.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To add an alternate contact as a security contact to your AWS account, see \"Update the alternate contacts for your AWS account\" in the AWS Account Management Reference Guide.",
+                    "Url": "https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact-alternate.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-security-account-information-provided-2c6c4685",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/Account.1/finding/48b86035-9e0d-4919-b053-8491edcb582f"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 CM-2",
+                    "NIST.800-53.r5 CM-2(2)"
+                ],
+                "SecurityControlId": "Account.1",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "MEDIUM",
+                    "Original": "MEDIUM"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:51:26.841Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/Inspector.4/finding/f4531828-122a-44ae-b20a-e55d9a2c8d86",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/Inspector.4",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:50:37.178Z",
+            "LastObservedAt": "2026-10-27T22:50:37.178Z",
+            "CreatedAt": "2026-10-27T22:51:15.364Z",
+            "UpdatedAt": "2026-10-27T22:51:15.364Z",
+            "Severity": {
+                "Label": "HIGH",
+                "Normalized": 70,
+                "Original": "HIGH"
+            },
+            "Title": "Amazon Inspector Lambda standard scanning should be enabled",
+            "Description": "This control checks whether Amazon Inspector Lambda standard scanning is enabled. For a standalone account, the control fails if Amazon Inspector Lambda standard scanning is disabled in the account. In a multi-account environment, the control fails if the delegated Inspector administrator account or any associated member account doesn't have Lambda standard scanning enabled.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To enable Amazon Inspector Lambda standard scanning, see \"Activating scans\" in the Amazon Inspector User Guide.",
+                    "Url": "https://docs.aws.amazon.com/inspector/latest/user/activate-scans.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-inspector-lambda-standard-scan-enabled-25b5092d",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/Inspector.4/finding/f4531828-122a-44ae-b20a-e55d9a2c8d86"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "SecurityControlId": "Inspector.4",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "HIGH",
+                    "Original": "HIGH"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:51:18.272Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/EC2.10/finding/4c60ec26-8217-4bd0-bad1-aa4cc767804f",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/EC2.10",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:50:37.525Z",
+            "LastObservedAt": "2026-10-27T22:50:37.525Z",
+            "CreatedAt": "2026-10-27T22:51:08.808Z",
+            "UpdatedAt": "2026-10-27T22:51:08.808Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40,
+                "Original": "MEDIUM"
+            },
+            "Title": "Amazon EC2 should be configured to use VPC endpoints that are created for the Amazon EC2 service",
+            "Description": "This control checks whether a service endpoint for Amazon EC2 is created for each VPC. The control fails if a VPC does not have a VPC endpoint created for the Amazon EC2 service.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To create an interface endpoint to Amazon EC2 from the Amazon VPC console, see \"Create a VPC endpoint\" in the AWS PrivateLink Guide. For Service name, choose com.amazonaws.region.ec2. You can also create and attach an endpoint policy to your VPC endpoint to control access to the Amazon EC2 API. For instructions on creating a VPC endpoint policy, see \"Create an endpoint policy\" in the Amazon EC2 User Guide.",
+                    "Url": "https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-vpc-endpoint-enabled-ec2-5e95aecb",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/annotation": "This VPC does not use a VPC endpoint for service ec2.",
+                "Resources:0/Id": "arn:aws:ec2:us-east-1:388301161877:vpc/vpc-04b42ad8cf1fcea09",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/EC2.10/finding/4c60ec26-8217-4bd0-bad1-aa4cc767804f"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsEc2Vpc",
+                    "Id": "arn:aws:ec2:us-east-1:388301161877:vpc/vpc-04b42ad8cf1fcea09",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-21",
+                    "NIST.800-53.r5 AC-3",
+                    "NIST.800-53.r5 AC-3(7)",
+                    "NIST.800-53.r5 AC-4",
+                    "NIST.800-53.r5 AC-4(21)",
+                    "NIST.800-53.r5 AC-6",
+                    "NIST.800-53.r5 SC-7",
+                    "NIST.800-53.r5 SC-7(11)",
+                    "NIST.800-53.r5 SC-7(16)",
+                    "NIST.800-53.r5 SC-7(20)",
+                    "NIST.800-53.r5 SC-7(21)",
+                    "NIST.800-53.r5 SC-7(3)",
+                    "NIST.800-53.r5 SC-7(4)"
+                ],
+                "SecurityControlId": "EC2.10",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "MEDIUM",
+                    "Original": "MEDIUM"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:51:19.978Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/S3.8/finding/34815369-42c5-4295-b583-4c9a1cdd1238",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/S3.8",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:50:52.571Z",
+            "LastObservedAt": "2026-10-27T22:50:52.571Z",
+            "CreatedAt": "2026-10-27T22:51:05.919Z",
+            "UpdatedAt": "2026-10-27T22:51:05.919Z",
+            "Severity": {
+                "Label": "INFORMATIONAL",
+                "Normalized": 0,
+                "Original": "INFORMATIONAL"
+            },
+            "Title": "S3 general purpose buckets should block public access",
+            "Description": "This control checks whether an Amazon S3 general purpose bucket blocks public access at the bucket level. The control fails if any of the following settings are set to false: ignorePublicAcls, blockPublicPolicy, blockPublicAcls, restrictPublicBuckets.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For information on how to remove public access at a bucket level, see \"Blocking public access to your Amazon S3 storage\" in the Amazon S3 User Guide.",
+                    "Url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-s3-bucket-level-public-access-prohibited-c3ef06d0",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:s3:::cgep-lab-config-93e2a288",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/S3.8/finding/34815369-42c5-4295-b583-4c9a1cdd1238"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsS3Bucket",
+                    "Id": "arn:aws:s3:::cgep-lab-config-93e2a288",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    },
+                    "Tags": {
+                        "Project": "cgep-lab",
+                        "ManagedBy": "terraform",
+                        "Environment": "baseline",
+                        "ComplianceScope": "cge-p-lab"
+                    },
+                    "Details": {
+                        "AwsS3Bucket": {
+                            "OwnerId": "554a869a74c54cd35bd51e6a6d3acc592eba507b46c9918236c11e8cf7811232",
+                            "CreatedAt": "2026-10-27T22:44:50.000Z",
+                            "Name": "cgep-lab-config-93e2a288"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-21",
+                    "NIST.800-53.r5 AC-3",
+                    "NIST.800-53.r5 AC-3(7)",
+                    "NIST.800-53.r5 AC-4",
+                    "NIST.800-53.r5 AC-4(21)",
+                    "NIST.800-53.r5 AC-6",
+                    "NIST.800-53.r5 SC-7",
+                    "NIST.800-53.r5 SC-7(11)",
+                    "NIST.800-53.r5 SC-7(16)",
+                    "NIST.800-53.r5 SC-7(20)",
+                    "NIST.800-53.r5 SC-7(21)",
+                    "NIST.800-53.r5 SC-7(3)",
+                    "NIST.800-53.r5 SC-7(4)",
+                    "NIST.800-53.r5 SC-7(9)"
+                ],
+                "SecurityControlId": "S3.8",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "INFORMATIONAL",
+                    "Original": "INFORMATIONAL"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:51:29.582Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/S3.17/finding/d1b55ea1-86eb-4961-ad0c-ddb9833af17d",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/S3.17",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:50:43.462Z",
+            "LastObservedAt": "2026-10-27T22:50:43.462Z",
+            "CreatedAt": "2026-10-27T22:51:00.726Z",
+            "UpdatedAt": "2026-10-27T22:51:00.726Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40,
+                "Original": "MEDIUM"
+            },
+            "Title": "S3 general purpose buckets should be encrypted at rest with AWS KMS keys",
+            "Description": "This control checks whether an Amazon S3 general purpose bucket is encrypted with an AWS KMS key (SSE-KMS or DSSE-KMS). The control fails if the bucket is encrypted with default encryption (SSE-S3).",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To encrypt an S3 bucket using SSE-KMS, see \"Specifying server-side encryption with AWS KMS (SSE-KMS)\" in the Amazon S3 User Guide. To encrypt an S3 bucket using DSSE-KMS, see \"Specifying dual-layer server-side encryption with AWS KMS keys (DSSE-KMS)\" in the Amazon S3 User Guide.",
+                    "Url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-kms-encryption.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-s3-default-encryption-kms-2c929850",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/annotation": "Amazon S3 bucket is not encrypted with AWS KMS key.",
+                "Resources:0/Id": "arn:aws:s3:::cgep-lab-config-93e2a288",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/S3.17/finding/d1b55ea1-86eb-4961-ad0c-ddb9833af17d"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsS3Bucket",
+                    "Id": "arn:aws:s3:::cgep-lab-config-93e2a288",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    },
+                    "Tags": {
+                        "Project": "cgep-lab",
+                        "ManagedBy": "terraform",
+                        "Environment": "baseline",
+                        "ComplianceScope": "cge-p-lab"
+                    },
+                    "Details": {
+                        "AwsS3Bucket": {
+                            "OwnerId": "554a869a74c54cd35bd51e6a6d3acc592eba507b46c9918236c11e8cf7811232",
+                            "CreatedAt": "2026-10-27T22:44:50.000Z",
+                            "Name": "cgep-lab-config-93e2a288"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 SC-12(2)",
+                    "NIST.800-53.r5 CM-3(6)",
+                    "NIST.800-53.r5 SC-13",
+                    "NIST.800-53.r5 SC-28",
+                    "NIST.800-53.r5 SC-28(1)",
+                    "NIST.800-53.r5 SC-7(10)",
+                    "NIST.800-53.r5 CA-9(1)",
+                    "NIST.800-53.r5 SI-7(6)",
+                    "NIST.800-53.r5 AU-9"
+                ],
+                "SecurityControlId": "S3.17",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "MEDIUM",
+                    "Original": "MEDIUM"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:51:20.233Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/Macie.1/finding/912cc088-25d9-4660-8d14-0b70f52ec7d7",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/Macie.1",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:57.272Z",
+            "LastObservedAt": "2026-10-27T22:48:57.272Z",
+            "CreatedAt": "2026-10-27T22:49:53.885Z",
+            "UpdatedAt": "2026-10-27T22:49:53.885Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40,
+                "Original": "MEDIUM"
+            },
+            "Title": "Macie should be enabled",
+            "Description": "This control checks whether Amazon Macie is enabled for an account. The control fails if Macie isn't enabled for the account.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To enable Macie, see \"Enable Macie\" in the Amazon Macie User Guide.",
+                    "Url": "https://docs.aws.amazon.com/macie/latest/user/getting-started.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-macie-status-check-e562d565",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/Macie.1/finding/912cc088-25d9-4660-8d14-0b70f52ec7d7"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 CA-7",
+                    "NIST.800-53.r5 CA-9(1)",
+                    "NIST.800-53.r5 RA-5",
+                    "NIST.800-53.r5 SA-8(19)",
+                    "NIST.800-53.r5 SI-4"
+                ],
+                "SecurityControlId": "Macie.1",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "MEDIUM",
+                    "Original": "MEDIUM"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:49:58.240Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/Inspector.3/finding/88c9794f-41f9-4cd5-abca-72e6a08fd9fb",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/Inspector.3",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:57.176Z",
+            "LastObservedAt": "2026-10-27T22:48:57.176Z",
+            "CreatedAt": "2026-10-27T22:49:50.254Z",
+            "UpdatedAt": "2026-10-27T22:49:50.254Z",
+            "Severity": {
+                "Label": "HIGH",
+                "Normalized": 70,
+                "Original": "HIGH"
+            },
+            "Title": "Amazon Inspector Lambda code scanning should be enabled",
+            "Description": "This control checks whether Amazon Inspector Lambda code scanning is enabled. For a standalone account, the control fails if Amazon Inspector Lambda code scanning is disabled in the account. In a multi-account environment, the control fails if the delegated Inspector administrator account or any associated member account doesn't have Lambda code scanning enabled.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To enable Amazon Inspector Lambda code scanning, see \"Activating scans\" in the Amazon Inspector User Guide.",
+                    "Url": "https://docs.aws.amazon.com/inspector/latest/user/activate-scans.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-inspector-lambda-code-scan-enabled-85fe8ff0",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/Inspector.3/finding/88c9794f-41f9-4cd5-abca-72e6a08fd9fb"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "SecurityControlId": "Inspector.3",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "HIGH",
+                    "Original": "HIGH"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:50:25.912Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/S3.1/finding/932bf913-426a-4501-910c-e88e12fdddf7",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/S3.1",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:57.712Z",
+            "LastObservedAt": "2026-10-27T22:48:57.712Z",
+            "CreatedAt": "2026-10-27T22:49:44.628Z",
+            "UpdatedAt": "2026-10-27T22:49:44.628Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40,
+                "Original": "MEDIUM"
+            },
+            "Title": "S3 general purpose buckets should have block public access settings enabled",
+            "Description": "This control checks whether the preceding Amazon S3 block public access settings are configured at the account level for an S3 general purpose bucket. The control fails if one or more of the block public access settings are set to false.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To enable Amazon S3 Block Public Access for your AWS account, see \"Configuring block public access settings for your account\" in the Amazon Simple Storage Service User Guide.",
+                    "Url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-block-public-access-account.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-s3-account-level-public-access-blocks-periodic-2b1f27f6",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/annotation": "Amazon S3 Block Public Access is not configured on this Account.",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/S3.1/finding/932bf913-426a-4501-910c-e88e12fdddf7"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-21",
+                    "NIST.800-53.r5 AC-3",
+                    "NIST.800-53.r5 AC-3(7)",
+                    "NIST.800-53.r5 AC-4",
+                    "NIST.800-53.r5 AC-4(21)",
+                    "NIST.800-53.r5 AC-6",
+                    "NIST.800-53.r5 SC-7",
+                    "NIST.800-53.r5 SC-7(11)",
+                    "NIST.800-53.r5 SC-7(16)",
+                    "NIST.800-53.r5 SC-7(20)",
+                    "NIST.800-53.r5 SC-7(21)",
+                    "NIST.800-53.r5 SC-7(3)",
+                    "NIST.800-53.r5 SC-7(4)",
+                    "NIST.800-53.r5 SC-7(9)"
+                ],
+                "SecurityControlId": "S3.1",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "MEDIUM",
+                    "Original": "MEDIUM"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:50:01.823Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/GuardDuty.1/finding/c704e282-2521-41d5-a548-9b211d8ccd51",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/GuardDuty.1",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:57.044Z",
+            "LastObservedAt": "2026-10-27T22:48:57.044Z",
+            "CreatedAt": "2026-10-27T22:49:40.197Z",
+            "UpdatedAt": "2026-10-27T22:49:40.197Z",
+            "Severity": {
+                "Label": "HIGH",
+                "Normalized": 70,
+                "Original": "HIGH"
+            },
+            "Title": "GuardDuty should be enabled",
+            "Description": "This AWS control checks whether Amazon GuardDuty is enabled in your AWS account and region.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To enable GuardDuty, see \"Getting started with GuardDuty\" in the Amazon GuardDuty User Guide.",
+                    "Url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-guardduty-enabled-centralized-281ac6c6",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/annotation": "Amazon GuardDuty is not configured.",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/GuardDuty.1/finding/c704e282-2521-41d5-a548-9b211d8ccd51"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-2(12)",
+                    "NIST.800-53.r5 AU-6(1)",
+                    "NIST.800-53.r5 AU-6(5)",
+                    "NIST.800-53.r5 CA-7",
+                    "NIST.800-53.r5 CM-8(3)",
+                    "NIST.800-53.r5 RA-3(4)",
+                    "NIST.800-53.r5 SA-11(1)",
+                    "NIST.800-53.r5 SA-11(6)",
+                    "NIST.800-53.r5 SA-15(2)",
+                    "NIST.800-53.r5 SA-15(8)",
+                    "NIST.800-53.r5 SA-8(19)",
+                    "NIST.800-53.r5 SA-8(21)",
+                    "NIST.800-53.r5 SA-8(25)",
+                    "NIST.800-53.r5 SC-5",
+                    "NIST.800-53.r5 SC-5(1)",
+                    "NIST.800-53.r5 SC-5(3)",
+                    "NIST.800-53.r5 SI-20",
+                    "NIST.800-53.r5 SI-3(8)",
+                    "NIST.800-53.r5 SI-4",
+                    "NIST.800-53.r5 SI-4(1)",
+                    "NIST.800-53.r5 SI-4(13)",
+                    "NIST.800-53.r5 SI-4(2)",
+                    "NIST.800-53.r5 SI-4(22)",
+                    "NIST.800-53.r5 SI-4(25)",
+                    "NIST.800-53.r5 SI-4(4)",
+                    "NIST.800-53.r5 SI-4(5)"
+                ],
+                "SecurityControlId": "GuardDuty.1",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "HIGH",
+                    "Original": "HIGH"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:49:54.575Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/IAM.9/finding/d5b76b1e-1274-4584-b0a1-731a20e29bd5",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/IAM.9",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:57.678Z",
+            "LastObservedAt": "2026-10-27T22:48:57.678Z",
+            "CreatedAt": "2026-10-27T22:49:39.505Z",
+            "UpdatedAt": "2026-10-27T22:49:39.505Z",
+            "Severity": {
+                "Label": "INFORMATIONAL",
+                "Normalized": 0,
+                "Original": "INFORMATIONAL"
+            },
+            "Title": "MFA should be enabled for the root user",
+            "Description": "This AWS control checks whether users of your AWS account require a multi-factor authentication (MFA) device to sign in with root user credentials.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For information about enabling MFA for the root user of an AWS account, see \"Multi-factor authentication for the AWS account root user\" in the AWS Identity and Access Management User Guide.",
+                    "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/enable-mfa-for-root.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-root-account-mfa-enabled-3079a6a2",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/IAM.9/finding/d5b76b1e-1274-4584-b0a1-731a20e29bd5"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-2(1)",
+                    "NIST.800-53.r5 AC-3(15)",
+                    "NIST.800-53.r5 IA-2(1)",
+                    "NIST.800-53.r5 IA-2(2)",
+                    "NIST.800-53.r5 IA-2(6)",
+                    "NIST.800-53.r5 IA-2(8)"
+                ],
+                "SecurityControlId": "IAM.9",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "INFORMATIONAL",
+                    "Original": "INFORMATIONAL"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:49:55.564Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/CloudTrail.4/finding/2bba3c15-4d6d-4d6e-b291-56cb41160f28",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/CloudTrail.4",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:56.250Z",
+            "LastObservedAt": "2026-10-27T22:48:56.250Z",
+            "CreatedAt": "2026-10-27T22:49:33.132Z",
+            "UpdatedAt": "2026-10-27T22:49:33.132Z",
+            "Severity": {
+                "Label": "INFORMATIONAL",
+                "Normalized": 0,
+                "Original": "INFORMATIONAL"
+            },
+            "Title": "CloudTrail log file validation should be enabled",
+            "Description": "This AWS control checks whether CloudTrail log file validation is enabled.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To enable CloudTrail log file validation, see \"Enabling log file integrity validation for CloudTrail\" in the AWS CloudTrail User Guide.",
+                    "Url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-log-file-validation-enabling.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-cloud-trail-log-file-validation-enabled-07fe3ba7",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:cloudtrail:us-east-1:388301161877:trail/cgep-lab-mgmt",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/CloudTrail.4/finding/2bba3c15-4d6d-4d6e-b291-56cb41160f28"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsCloudTrailTrail",
+                    "Id": "arn:aws:cloudtrail:us-east-1:388301161877:trail/cgep-lab-mgmt",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    },
+                    "Tags": {
+                        "Project": "cgep-lab",
+                        "ManagedBy": "terraform",
+                        "Environment": "baseline",
+                        "ComplianceScope": "cge-p-lab"
+                    },
+                    "Details": {
+                        "AwsCloudTrailTrail": {
+                            "HasCustomEventSelectors": false,
+                            "HomeRegion": "us-east-1",
+                            "IncludeGlobalServiceEvents": true,
+                            "IsMultiRegionTrail": true,
+                            "IsOrganizationTrail": false,
+                            "LogFileValidationEnabled": true,
+                            "Name": "cgep-lab-mgmt",
+                            "S3BucketName": "cgep-lab-cloudtrail-93e2a288"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AU-9",
+                    "NIST.800-53.r5 SI-4",
+                    "NIST.800-53.r5 SI-7(1)",
+                    "NIST.800-53.r5 SI-7(3)",
+                    "NIST.800-53.r5 SI-7(7)"
+                ],
+                "SecurityControlId": "CloudTrail.4",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "INFORMATIONAL",
+                    "Original": "INFORMATIONAL"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:49:44.098Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/IAM.6/finding/2d3d2b66-9cd4-4596-9371-9e95feb98fcd",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/IAM.6",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:57.647Z",
+            "LastObservedAt": "2026-10-27T22:48:57.647Z",
+            "CreatedAt": "2026-10-27T22:49:29.026Z",
+            "UpdatedAt": "2026-10-27T22:49:29.026Z",
+            "Severity": {
+                "Label": "CRITICAL",
+                "Normalized": 90,
+                "Original": "CRITICAL"
+            },
+            "Title": "Hardware MFA should be enabled for the root user",
+            "Description": "This AWS control checks whether your AWS account is enabled to use a hardware multi-factor authentication (MFA) device to sign in with root user credentials.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "For information about enabling hardware MFA for the root user, see \"Multi-factor authentication for an AWS account root user\" in the IAM User Guide.",
+                    "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/enable-mfa-for-root.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-root-account-hardware-mfa-enabled-670d9edb",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/IAM.6/finding/2d3d2b66-9cd4-4596-9371-9e95feb98fcd"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-2(1)",
+                    "NIST.800-53.r5 AC-3(15)",
+                    "NIST.800-53.r5 IA-2(1)",
+                    "NIST.800-53.r5 IA-2(2)",
+                    "NIST.800-53.r5 IA-2(6)",
+                    "NIST.800-53.r5 IA-2(8)"
+                ],
+                "SecurityControlId": "IAM.6",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "CRITICAL",
+                    "Original": "CRITICAL"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:49:34.890Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/IAM.4/finding/5d70c819-cc42-42bb-824c-e48314ab9780",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/IAM.4",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:57.107Z",
+            "LastObservedAt": "2026-10-27T22:48:57.107Z",
+            "CreatedAt": "2026-10-27T22:49:28.915Z",
+            "UpdatedAt": "2026-10-27T22:49:28.915Z",
+            "Severity": {
+                "Label": "INFORMATIONAL",
+                "Normalized": 0,
+                "Original": "INFORMATIONAL"
+            },
+            "Title": "IAM root user access key should not exist",
+            "Description": "This AWS control checks whether the root user access key is available.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To delete the root user access key, see \"Deleting access keys for the root user\" in the IAM User Guide. To delete the root user access keys from an AWS account in AWS GovCloud (US), see \"Deleting my AWS GovCloud (US) account root user access keys\" in the AWS GovCloud (US) User Guide.",
+                    "Url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-iam-root-access-key-check-5bbb249e",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/IAM.4/finding/5d70c819-cc42-42bb-824c-e48314ab9780"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-2(1)",
+                    "NIST.800-53.r5 AC-3(15)",
+                    "NIST.800-53.r5 AC-3(7)",
+                    "NIST.800-53.r5 AC-6",
+                    "NIST.800-53.r5 AC-6(10)",
+                    "NIST.800-53.r5 AC-6(2)"
+                ],
+                "SecurityControlId": "IAM.4",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "INFORMATIONAL",
+                    "Original": "INFORMATIONAL"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:50:10.565Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/EMR.2/finding/799cac1e-e94f-4a5d-93eb-2467f86742bb",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/EMR.2",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:56.798Z",
+            "LastObservedAt": "2026-10-27T22:48:56.798Z",
+            "CreatedAt": "2026-10-27T22:49:05.696Z",
+            "UpdatedAt": "2026-10-27T22:49:05.696Z",
+            "Severity": {
+                "Label": "INFORMATIONAL",
+                "Normalized": 0,
+                "Original": "INFORMATIONAL"
+            },
+            "Title": "Amazon EMR block public access setting should be enabled",
+            "Description": "This control checks whether your account is configured with Amazon EMR block public access. The control fails if the block public access setting is not enabled or if any port other than 22 is allowed.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To configure block public access for Amazon EMR, see \"Using Amazon EMR block public access\" in the Amazon EMR Management Guide.",
+                    "Url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-block-public-access.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-emr-block-public-access-a27b18e1",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "Resources:0/Id": "arn:aws:iam::388301161877:root",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/EMR.2/finding/799cac1e-e94f-4a5d-93eb-2467f86742bb"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsAccount",
+                    "Id": "AWS::::Account:388301161877",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "PASSED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-21",
+                    "NIST.800-53.r5 AC-3",
+                    "NIST.800-53.r5 AC-3(7)",
+                    "NIST.800-53.r5 AC-4",
+                    "NIST.800-53.r5 AC-4(21)",
+                    "NIST.800-53.r5 AC-6",
+                    "NIST.800-53.r5 SC-7",
+                    "NIST.800-53.r5 SC-7(11)",
+                    "NIST.800-53.r5 SC-7(16)",
+                    "NIST.800-53.r5 SC-7(20)",
+                    "NIST.800-53.r5 SC-7(21)",
+                    "NIST.800-53.r5 SC-7(3)",
+                    "NIST.800-53.r5 SC-7(4)",
+                    "NIST.800-53.r5 SC-7(9)"
+                ],
+                "SecurityControlId": "EMR.2",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "RESOLVED"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "INFORMATIONAL",
+                    "Original": "INFORMATIONAL"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:49:22.010Z"
+        },
+        {
+            "SchemaVersion": "2018-10-08",
+            "Id": "arn:aws:securityhub:us-east-1:388301161877:security-control/EC2.56/finding/66aefc60-128d-4b09-872e-8ac2f4c2f685",
+            "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+            "ProductName": "Security Hub",
+            "CompanyName": "AWS",
+            "Region": "us-east-1",
+            "GeneratorId": "security-control/EC2.56",
+            "AwsAccountId": "388301161877",
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ],
+            "FirstObservedAt": "2026-10-27T22:48:58.041Z",
+            "LastObservedAt": "2026-10-27T22:48:58.041Z",
+            "CreatedAt": "2026-10-27T22:49:05.029Z",
+            "UpdatedAt": "2026-10-27T22:49:05.029Z",
+            "Severity": {
+                "Label": "MEDIUM",
+                "Normalized": 40,
+                "Original": "MEDIUM"
+            },
+            "Title": "VPCs should be configured with an interface endpoint for Docker Registry",
+            "Description": "This control checks whether a virtual private cloud (VPC) that you manage has an interface VPC endpoint for Docker Registry. The control fails if the VPC doesn't have an interface VPC endpoint for Docker Registry. This control evaluates resources in a single account.",
+            "Remediation": {
+                "Recommendation": {
+                    "Text": "To configure a VPC endpoint, see \"Access an AWS service using an interface VPC endpoint\" in the AWS PrivateLink Guide.",
+                    "Url": "https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html"
+                }
+            },
+            "ProductFields": {
+                "RelatedAWSResources:0/name": "securityhub-vpc-endpoint-enabled-ecr-dkr-1ec1f014",
+                "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+                "aws/securityhub/ProductName": "Security Hub",
+                "aws/securityhub/CompanyName": "AWS",
+                "aws/securityhub/annotation": "This VPC does not use a VPC endpoint for service ecr.dkr.",
+                "Resources:0/Id": "arn:aws:ec2:us-east-1:388301161877:vpc/vpc-04b42ad8cf1fcea09",
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:388301161877:security-control/EC2.56/finding/66aefc60-128d-4b09-872e-8ac2f4c2f685"
+            },
+            "Resources": [
+                {
+                    "Type": "AwsEc2Vpc",
+                    "Id": "arn:aws:ec2:us-east-1:388301161877:vpc/vpc-04b42ad8cf1fcea09",
+                    "Partition": "aws",
+                    "Region": "us-east-1",
+                    "Provider": "AWS",
+                    "Owner": {
+                        "Account": {
+                            "Id": "388301161877"
+                        }
+                    }
+                }
+            ],
+            "Compliance": {
+                "Status": "FAILED",
+                "RelatedRequirements": [
+                    "NIST.800-53.r5 AC-21",
+                    "NIST.800-53.r5 AC-3",
+                    "NIST.800-53.r5 AC-3(7)",
+                    "NIST.800-53.r5 AC-4",
+                    "NIST.800-53.r5 AC-4(21)",
+                    "NIST.800-53.r5 AC-6",
+                    "NIST.800-53.r5 SC-7",
+                    "NIST.800-53.r5 SC-7(11)",
+                    "NIST.800-53.r5 SC-7(16)",
+                    "NIST.800-53.r5 SC-7(20)",
+                    "NIST.800-53.r5 SC-7(21)",
+                    "NIST.800-53.r5 SC-7(3)",
+                    "NIST.800-53.r5 SC-7(4)"
+                ],
+                "SecurityControlId": "EC2.56",
+                "AssociatedStandards": [
+                    {
+                        "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                    },
+                    {
+                        "StandardsId": "standards/nist-800-53/v/5.0.0"
+                    }
+                ],
+                "SecurityControlParameters": [
+                    {
+                        "Name": "vpcIds",
+                        "Value": []
+                    }
+                ]
+            },
+            "WorkflowState": "NEW",
+            "Workflow": {
+                "Status": "NEW"
+            },
+            "RecordState": "ACTIVE",
+            "FindingProviderFields": {
+                "Severity": {
+                    "Label": "MEDIUM",
+                    "Original": "MEDIUM"
+                },
+                "Types": [
+                    "Software and Configuration Checks/Industry and Regulatory Standards"
+                ]
+            },
+            "ProcessedAt": "2026-10-27T22:49:14.895Z"
+        }
+    ]
+}
