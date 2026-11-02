@@ -1,0 +1,36 @@
+# .github/workflows/gcp-wif-demo.yml
+name: gcp-wif-demo
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # required to mint the OIDC token
+  contents: read
+
+jobs:
+  wif-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+cat > .github/workflows/gcp-wif-demo.yml << 'G1'
+# .github/workflows/gcp-wif-demo.yml
+name: gcp-wif-demo
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # required to mint the OIDC token
+  contents: read
+
+jobs:
+  wif-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
